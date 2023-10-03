@@ -1,0 +1,100 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background-color: white; */
+    background: linear-gradient(300deg, #6fcceb, #443349, #d9dce6);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite; 
+}
+.container{
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    width: 690px;
+    box-shadow: 0 3px 10px 0 #aaa;
+}
+.wrapper{
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    
+}
+.wrapper .user-input{
+    display: flex;
+    border-bottom: 1px solid #bbb;
+}
+.user-input .to-text{
+    border-radius: 0px;
+    border-left: 1px solid #bbb;
+}
+.user-input textarea{
+    height: 250px;
+    width: 100%;
+    /* border: none;      */
+    outline: none;
+    background: none;
+    resize: none;
+    font-size: 18px;
+    border-radius: 6px;
+    padding: 10px 15px;
+}
+.control-icons, li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.control-icons{
+    list-style: none;
+    padding: 0px 20px;
+}
+.control-icons .row.source .mini-icons{
+    padding-right: 14px;
+    border-right: 1px solid black;
+}
+.control-icons .row.dest .mini-icons{
+    padding-left: 20px;
+    border-left: 1px solid black;
+}
+.control-icons .mini-icons i{
+    /* color: #837373; */
+    width: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 14px;
+}
+.control-icons .row select{
+    border: none;
+    outline: none;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.container button{
+    width: 95%;
+    padding: 15px;
+    margin-top: 20px;
+    /* margin-right: 10px; */
+    font-size: large;
+    font: weight 2px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(28, 136, 179);
+    height: 50px;
+    color: white;
+    box-shadow: 0 3px 10px 0 #aaa;
+}
+.container button:active{
+    background-color: rgb(93, 130, 161);
+    color: white;
+}
+#voice_to_text{
+    width: 10%;
+    height: 50px;
+    margin-left: 10px;
+    /* border-radius: 180px; */
+}
+.buttons{
+    display: flex;
+    width: 100%;
+}

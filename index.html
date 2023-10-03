@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Language Trasnslator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="user-input">
+                <textarea id="text_input" class="source_text" placeholder="Enter Text"></textarea>
+                <textarea class="dest_text" id='target_text' placeholder="Translation" readonly disabled></textarea>
+            </div>
+            <ul class="control-icons">
+                <li class="row source">
+                    <div class="mini-icons">
+                        <i id="from_source" class="volume-up-fill"><img src="./svg's/volume-up-fill.svg" alt=""></i>
+                        <i id="clear_1" class="delete-back-2-fill" onclick="clearinput()"><img src="./svg's/delete-back-2-fill.svg" alt=""></i>
+                    </div>
+                    <select id="from_lang">
+                        <option value="en">English</option>
+                    </select>
+                </li>
+
+                <li class="row dest">
+                    <select id="to_lang">
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                        <option value="ne">Nepal</option>
+                    </select>                    
+                    <div class="mini-icons">
+                        <i id="clear_2" class="delete-back-2-fill"><img src="./svg's/delete-back-2-fill.svg" alt=""></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <button id="translate" onclick="trans_text()">Translate text</button>
+            
+                <button id="voice_to_text" ><i><img src="./svg's/mic-fill.svg" alt=""></i></button>
+            
+        </div>
+        
+    </div>
+<script type="text/javascript" src="./script.js"></script>    
+<script type="text/javascript" src="./speech.js"></script>
+</body>
+</html>
